@@ -1,1 +1,50 @@
 # LeadingModes_rfMRI
+This fold contains data and codes for the following manuscript:
+
+**Leading Basic Modes of Spontaneous Activity Drive Individual Functional Connectivity Organization in the Resting Human Brain**
+
+Xi Chen et al., (2023)
+
+# Fold Data
+### Fold Figure1
+-	Fold REST1: Brain maps of leading basic modes for REST1 of the HCP dataset.
+-	Fold REST2: Brain maps of leading basic modes for REST2 of the HCP dataset.
+-	Weights_REST1_REST2.mat: Weights of the first 30 basic modes for two runs (i.e., REST1 and REST2 of the HCP dataset). 
+-	System_level_fluctuation_amplitude.mat: System-level fluctuation amplitudes for leading basic modes.
+-	Similar_REST1_REST2.mat: Spatial similarity of the first ten basic modes between two runs (i.e., REST1 and REST2).
+
+### Fold Figure2
+-	NeuroSynth_term_corr.xlsx: Correlations between leading basic modes and cognitive terms obtained based on the NeuroSynth meta-analytic database<sup>1</sup>.
+-	Similar_CognitiveComponent.mat: Crrelations between leading basic modes and 12 cognitive components derived from Yeo et al<sup>2</sup>.
+
+### Fold Figure3
+-	FC_original.mat: Original functional connectivity matrix for REST1 of the HCP dataset (group level).
+-	FC_each_mode.mat: Functional connectivity patterns corresponding to five leading basic modes (REST1 of the HCP dataset)
+-	FC_reconst_group.mat: Reconstructed functional connectivity matrices obtained by using different numbers of basic modes (1~5) based on the theoretical modeling (group level).
+-	Similarity_Reconst_Original_individual.mat: Spatial similarity between reconstructed and original FC matrices at the individual level for both runs.
+-	Similarity_Reconst_between_runs_individual.mat: Intra- and inter-subject similarity of reconstructed FC matrices between two runs.
+-	Identification_Accuracy_Idiff.mat: Individual identification accuracy and differential identifiability Idiff based on the reconstructed FC matrix.
+
+### Fold Figure4	
+-	Fold RW: Brain maps of leading basic modes at rested wakefulness state in the sleep-deprivation dataset.
+-	Fold SD: Brain maps of leading basic modes after sleep-deprivation in the sleep-deprivation dataset.
+-	Weights_RW_SD.mat: Weights of the first 30 basic modes at rested wakefulness state and after sleep-deprivation in the sleep-deprivation dataset.
+-	Similar_RW_REST1.mat: Spatial similarity of the first ten basic modes between rested wakefulness state in the sleep-deprivation dataset and REST1 of HCP dataset.
+-	Similar_RW_SD.mat: Spatial similarity between the first ten basic modes between rested wakefulness state and after sleep-deprivation in the sleep-deprivation dataset.
+-	SD-RW.nii: Brain map of the regions showing significant changes after sleep-deprivation (p <0.05, FDR corrected). Regional differences in fluctuation amplitudes are displayed.
+-	Coactivation_pattern_and_changes.mat: System-level coactivation patterns for basic mode 1 at rested wakefulness and after sleep-deprivation, and between-state differences.
+
+### Fold Parcellations
+- This fold contains parcellations for the following manuscript.
+
+# Fold Code
+- Mode_extract.m: Basicmode identification.
+- calc_leading_basic_mode_number.m: Identification of leading basic modes.
+- reconst_FC.m: Functional connectivity reconstruction.
+
+# References
+1. Y
+2. Yeo
+3. Schaefer A, et al. (2018) Local-Global Parcellation of the Human Cerebral Cortex from Intrinsic Functional Connectivity MRI. Cereb Cortex 28(9):3095-3114.
+4. Wang J, Wang X, Xia M, Liao X, Evans A, He Y. GRETNA: a graph theoretical network analysis toolbox for imaging connectomics. Front Hum Neurosci. 2015;9:386.
+5. Sun Y, et al. (2021) Eigen microstates and their evolutions in complex systems. Communications in Theoretical Physics 73(6).
