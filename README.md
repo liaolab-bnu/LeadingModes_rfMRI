@@ -35,16 +35,17 @@ Xi Chen et al., (2023)
   -	Coactivation_pattern_and_changes.mat: System-level coactivation patterns for basic mode 1 at rested wakefulness and after sleep-deprivation, and between-state differences.
 
 - Fold Parcellations
-  - This fold contains parcellations for the following manuscript.
+  - This fold contains parcellations<sup>3</sup> used in the manuscript.
 
 ## Fold Code
 - Mode_extract.m: Basicmode identification.
-- calc_leading_basic_mode_number.m: Identification of leading basic modes.
+- get_leading_number.py: Identification of leading basic modes.
 - reconst_FC.m: Functional connectivity reconstruction.
 
 ## References
-1. Y
-2. Yeo
+1. Yarkoni T, Poldrack RA, Nichols TE, Van Essen DC, Wager TD. Large-scale automated synthesis of human functional neuroimaging data. Nat. Methods 8, 665-670 (2011).
+2. Yeo BT, et al. Functional specialization and flexibility in human association cortex. Cereb. Cortex 25, 3654-3672 (2015).
 3. Schaefer A, et al. (2018) Local-Global Parcellation of the Human Cerebral Cortex from Intrinsic Functional Connectivity MRI. Cereb Cortex 28(9):3095-3114.
 4. Wang J, Wang X, Xia M, Liao X, Evans A, He Y. GRETNA: a graph theoretical network analysis toolbox for imaging connectomics. Front Hum Neurosci. 2015;9:386.
 5. Sun Y, et al. (2021) Eigen microstates and their evolutions in complex systems. Communications in Theoretical Physics 73(6).
+6. Satopaa V, Albrecht J, Irwin D, Raghavan B. Finding a" kneedle" in a haystack: Detecting knee points in system behavior. In: 2011 31st international conference on distributed computing systems workshops). IEEE (2011).
